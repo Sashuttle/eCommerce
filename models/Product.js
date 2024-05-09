@@ -23,11 +23,14 @@ Product.init(
       allowNull: false,
     },
 
-    //Note: Defining price
+    //Note: Defining price 
+    //Note: For decimal value im limiting it to a total of 10 digits that can be stored in the column to the left and right of the decimal point & limiting it to to digits after the decimal point
     price: {
-      type: DataTypes.DECIMAL,
+      type: DataTypes.DECIMAL(10,2),
       allowNull: false,
+      validate: {
       isDecimal: true,
+      },
     },
 
     //Note: Defining stock
@@ -40,6 +43,14 @@ Product.init(
       },
     },
     
+    //Note:Defining category id
+    category_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'category',
+        key: 'id',
+      },
+    },
   },
 
   {
