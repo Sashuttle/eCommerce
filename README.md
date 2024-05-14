@@ -40,6 +40,9 @@ Dotenv
     - https://www.npmjs.com/package/dotenv
     - License: BSD-2-Clause
 
+## Acknowledgements
+I did use chatbots (xpert learning assistant & chatgpt) throughout this assignment to help me clear up any confusion I had. It was very helpful in correcting my code and giving me an explanation as to why what I had did not work and why their suggestion was better. 
+
 ## License
 MIT
 
